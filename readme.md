@@ -2,9 +2,6 @@
 
 <p align="center">
 <a href="https://travis-ci.org/laravel/homestead"><img src="https://travis-ci.org/laravel/homestead.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/homestead"><img src="https://poser.pugx.org/laravel/homestead/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/homestead"><img src="https://poser.pugx.org/laravel/homestead/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/homestead"><img src="https://poser.pugx.org/laravel/homestead/license.svg" alt="License"></a>
 </p>
 
 ## 介绍
@@ -13,3 +10,9 @@
 - 数据库创建规则修改 分数据库软件
 ## 参考
 Official documentation [is located here](https://laravel.com/docs/homestead).
+
+
+
+
+
+
