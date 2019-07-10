@@ -1,0 +1,104 @@
+{
+    "name": "darklost",
+    "box": "laravel/homestead",
+    "version": "8.0.0",
+    "hostname": "darklost",
+    "ip": "192.168.10.10",
+    "memory": 4096,
+    "cpus": 4,
+    "provider": "virtualbox",
+    "authorize": "~/.ssh/id_rsa.pub",
+    "keys": [
+        "~/.ssh/id_rsa"
+    ],
+    "folders": [
+        {
+            "map": "./workspace",
+            "to": "/home/vagrant/workspace"
+        }
+    ],
+    "sites": [
+        {
+            "map": "gl.phi",
+            "to": "/home/vagrant/workspace/phi_admin/public"
+        },
+        {
+            "map": "demo.laravel",
+            "to": "/home/vagrant/workspace/laravel_demo/public"
+        }
+    ],
+    "databases": [
+        {
+            "mysql": [
+                "homestead",
+                "manager2",
+                "skynet_game",
+                "skynet_data",
+                "skynet_collect",
+                "skynet_config",
+                "skynet_task",
+                "skynet_pay"
+            ]
+        },
+        {
+            "mongodb": [
+                "skynet_config"
+            ]
+        }
+    ],
+    "features": [
+        {
+            "mongodb": true
+        },
+        {
+            "frpc": true
+        },
+        {
+            "mariadb": false
+        },
+        {
+            "ohmyzsh": false
+        },
+        {
+            "webdriver": false
+        }
+    ],
+    "ports": [
+        {
+            "send": 8887,
+            "to": 8887
+        },
+        {
+            "send": 8886,
+            "to": 8886
+        },
+        {
+            "send": 8889,
+            "to": 8889
+        },
+        {
+            "send": 9000,
+            "to": 9000
+        },
+        {
+            "send": 9011,
+            "to": 9011
+        },
+        {
+            "send": 8001,
+            "to": 8001
+        },
+        {
+            "send": 8888,
+            "to": 8888
+        },
+        {
+            "send": 9001,
+            "to": 9001
+        },
+        {
+            "send": 9999,
+            "to": 9999
+        }
+    ]
+}

@@ -1,0 +1,89 @@
+---
+name: "darklost" #虚拟机名称
+box: "laravel/homestead" #box名称
+version: "8.0.0" #box版本
+hostname: "darklost" #主机名
+ip: "192.168.10.10"
+memory: 4096
+cpus: 4
+provider: virtualbox
+
+
+authorize: ~/.ssh/id_rsa.pub
+
+keys:
+    - ~/.ssh/id_rsa
+
+folders:
+    - map: ./workspace
+      to: /home/vagrant/workspace
+
+sites:
+    - map: gl.phi
+      to: /home/vagrant/workspace/phi_admin/public
+    - map: demo.laravel
+      to: /home/vagrant/workspace/laravel_demo/public
+
+databases:
+    - mysql:
+      - homestead
+      ### phi-管理后台
+      - manager2
+      ### phi-游戏数据库
+      - skynet_game
+      - skynet_data
+      - skynet_collect
+      - skynet_config
+      - skynet_task
+      - skynet_pay
+    - mongodb:
+      - skynet_config
+
+
+
+
+features:
+    - mongodb: true
+    - frpc: true
+    - mariadb: false
+    - ohmyzsh: false
+    - webdriver: false
+
+
+
+ports:
+#游戏服务端口
+    ## phi-游戏服务器端口
+
+    ### http
+    ##### 登录服务端口
+    - send: 8887
+      to: 8887
+    ##### 充值中心充值回调http服务端口 web_pay_callback_port
+    - send: 8886
+      to: 8886
+    ##### 后台管理API http服务端口 admin_web_port
+    - send: 8889
+      to: 8889
+    ##### 客户端上报 http服务端口 report_web_port
+    - send: 9000
+      to: 9000
+    ##### 客户端请求 代理服务器列表端口 proxy_web_port
+    - send: 9011
+      to: 9011
+    ### tcp
+    ##### login登录服务端口 login_port
+    - send: 8001
+      to: 8001
+    ##### gate服务端口  gate_port
+    - send: 8888
+      to: 8888
+
+    ###  webscoekt 
+    ##### login登录服务端口 wslogin_port
+    - send: 9001
+      to: 9001
+    ##### gate服务端口   wsgate_port
+    - send: 9999
+      to: 9999
+
