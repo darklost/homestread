@@ -8,8 +8,8 @@
 </p>
 
 ## 介绍
--- 修改自homestead的服务器vagrant启动配置 
+- 修改自homestead的服务器vagrant启动配置 
 ## 修改
--- 数据库创建规则修改 分数据库软件
-
+- 数据库创建规则修改 分数据库软件
+## 参考
 Official documentation [is located here](https://laravel.com/docs/homestead).
