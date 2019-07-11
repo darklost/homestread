@@ -14,7 +14,8 @@
     "folders": [
         {
             "map": "./workspace",
-            "to": "/home/vagrant/workspace"
+            "to": "/home/vagrant/workspace",
+            "type": "nfs"
         }
     ],
     "sites": [
