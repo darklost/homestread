@@ -1,7 +1,7 @@
 <p align="center"><img src="https://laravel.com/assets/img/components/logo-homestead.svg"></p>
 
 <p align="center">
-<a href="https://travis-ci.org/laravel/homestead"><img src="https://travis-ci.org/laravel/homestead.svg" alt="Build Status"></a>
+<a href="https://travis-ci.org/darklost/homestead"><img src="https://travis-ci.org/darklost/homestead.svg?branch=master" alt="Build Status"></a>
 </p>
 
 ## 介绍
@@ -11,8 +11,13 @@
 ## 参考
 Official documentation [is located here](https://laravel.com/docs/homestead).
 
+## 共享文件夹
 
+```
 
+vagrant plugin install vagrant-winnfsd
+
+```
 
 
 
