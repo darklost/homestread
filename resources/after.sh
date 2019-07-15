@@ -27,3 +27,6 @@
 
 # Install rlwrap
 sudo apt-get install -y rlwrap
+
+# Install imagick
+sudo apt-get install -y php-imagick

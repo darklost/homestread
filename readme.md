@@ -19,5 +19,21 @@ vagrant plugin install vagrant-winnfsd
 
 ```
 
+## mysql 
+
+#### 配置文件 `mysqld.cnf`
+
+```
+
+sudo vim /etc/mysql/mysql.conf.d/mysqld.cnf
+
+```
+#### 添加或修改 `sql_mode`
+
+```
+sql_mode=STRICT_TRANS_TABLES,NO_ENGINE_SUBSTITUTION
+
+```
+
 
 
