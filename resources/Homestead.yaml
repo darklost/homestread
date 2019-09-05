@@ -1,7 +1,7 @@
 ---
 name: "darklost" #虚拟机名称
 box: "laravel/homestead" #box名称
-version: "8.0.0" #box版本
+version: "8.1.0" #box版本
 hostname: "darklost" #主机名
 ip: "192.168.10.10"
 memory: 4096
@@ -21,9 +21,8 @@ folders:
 
 sites:
     - map: gl.phi
-      to: /home/vagrant/workspace/phi_admin/public
-    - map: demo.laravel
-      to: /home/vagrant/workspace/laravel_demo/public
+      to: /home/vagrant/workspace/admin/public
+
 
 databases:
     - mysql:
