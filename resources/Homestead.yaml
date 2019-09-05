@@ -58,8 +58,8 @@ ports:
 
     ### http
     ##### 登录服务端口
-    - send: 8887
-      to: 8887
+    - send: 9010
+      to: 9010
     ##### 充值中心充值回调http服务端口 web_pay_callback_port
     - send: 8886
       to: 8886
@@ -74,17 +74,17 @@ ports:
       to: 9011
     ### tcp
     ##### login登录服务端口 login_port
-    - send: 8001
-      to: 8001
+    - send: 9020
+      to: 9020
     ##### gate服务端口  gate_port
-    - send: 8888
-      to: 8888
+    - send: 9021
+      to: 9021
 
     ###  webscoekt 
     ##### login登录服务端口 wslogin_port
-    - send: 9001
-      to: 9001
+    - send: 9030
+      to: 9030
     ##### gate服务端口   wsgate_port
-    - send: 9999
-      to: 9999
+    - send: 9031
+      to: 9031
 
