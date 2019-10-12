@@ -17,7 +17,6 @@ keys:
 folders:
     - map: ./workspace
       to: /home/vagrant/workspace
-      type: nfs
 
 sites:
     - map: gl.phi
